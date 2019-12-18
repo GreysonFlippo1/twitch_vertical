@@ -34,6 +34,7 @@ function checkOrientation(){
     if(height>=width){
         vertical = 1;
     }
+
     else{
         vertical = 0;
     }
@@ -44,12 +45,15 @@ function checkOrientation(){
 }
 
 function updateGUI(){
+
     if(document.getElementsByClassName("tw-flex").length == 0){
         vertical = -1;
     }
+
     else{
         if(vertical == 1){
             let twFlex = document.getElementsByClassName("tw-flex");
+
             for(let i = 0; i < twFlex.length; i++){
                 twFlex[i].classList.add(`verticalTTV_${i}`);
             }
@@ -67,12 +71,12 @@ function updateGUI(){
                 }
             }
         }
+
         else if(vertical == 0){
             if(chat){
                 document.getElementsByClassName("verticalTTV_27")[0].appendChild(chat);
                 about=null;
             }
-            //else do nothing
         }
     }
 
