@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Vertical Layout for Twtich™",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Optimizes Twitch's UI for a vertical layout",
   "icons": {                   
     "48": "icon48.png",                   
