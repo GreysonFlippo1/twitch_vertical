@@ -14,7 +14,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.twitch.tv//*"],
+      "matches": ["https://www.twitch.tv/*"],
       "css":["verticalTwtichCSS.css"],
       "js": ["verticalTwitchJS.js"]
     }
