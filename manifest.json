@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Vertical Layout for Twtich™",
+  "version": "0.1",
+  "description": "Optimizes Twitch's UI for a vertical layout",
+  "icons": {                   
+    "48": "icon48.png",                   
+    "128": "icon128.png"
+  },
+ "browser_action": {
+    "default_icon": {                   
+      "48": "icon48.png"    
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>" , "https://twitch.tv/*"],
+      "css":["verticalTwtichCSS.css"],
+      "js": ["verticalTwitchJS.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
